@@ -3,76 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Your Name] | Portfolio</title>
+  <title>Mustapha Jose's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <div id="loader">
+    <div class="spinner"></div>
+    <p class="loading-text">Welcome to My Jose's World...</p>
+  </div>
+ <nav class="navbar">
+  <div class="nav-brand">Jose's World</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-controls">
+    <button class="menu-toggle">☰</button>
+    <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </div>
+</nav>
+ <header class="hero">
     <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
-    <h1>Hi, I'm <span>[Your Name]</span> 👋</h1>
-    <p class="tagline">Frontend Developer | AI Enthusiast | Problem Solver</p>
+    <h1>Hello, I'm <span>Jose</span> 👋</h1>
+    <p class="tagline">Frontend Developer | AI Enthusiast | Problem Solver | Digital Marketer.</p>
   </header>
 
+  <main>
   <section id="about">
     <h2>About Me</h2>
     <p>
       I’m a creative developer passionate about building user-friendly websites and exploring modern technologies like AI and automation.
-      My goal is to craft beautiful, performant digital experiences that make life easier.
+      My goal is to craft beautiful, performant digital experiences that makes life easier.
     </p>
   </section>
-
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-container">
       <span>HTML</span>
       <span>CSS</span>
+      <span>MEO</span>
       <span>JavaScript</span>
       <span>React</span>
       <span>Python</span>
       <span>Git & GitHub</span>
     </div>
   </section>
+ <section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/project1.jpg" alt="AI Blog Generator">
-        <h3>AI Blog Generator</h3>
-        <p>Generates blog posts using OpenAI API.</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <img src="images/project2.jpg" alt="Fitness Tracker">
-        <h3>Fitness Tracker App</h3>
-        <p>Track daily workouts and calories burned.</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-
-      <div class="project-card">
-        <img src="images/project3.jpg" alt="Magazine Website">
-        <h3>Magazine Website</h3>
-        <p>Modern lifestyle and beauty trends platform.</p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
+    <div class="project-card">
+      <img src="images/portfolio-ai-writer.jpg" alt="AI Content Generator Project">
+      <h3>AI Content Generator</h3>
+      <p>
+        A web app that generates SEO-optimized articles using OpenAI's API. 
+        Features include keyword integration, tone adjustment, and export to markdown.
+      </p>
+      <a href="https://github.com/devmediay6/ai-content-generator" target="_blank">View on GitHub</a>
     </div>
-  </section>
+
+    <div class="project-card">
+      <img src="images/portfolio-dashboard.jpg" alt="Analytics Dashboard Project">
+      <h3>Analytics Dashboard</h3>
+      <p>
+        A responsive admin dashboard built with React and Chart.js, displaying 
+        real-time metrics and data visualizations for business insights.
+      </p>
+      <a href="https://github.com/devmediay6/analytics-dashboard" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="images/portfolio-portfolio.jpg" alt="Personal Portfolio Website">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        A fully responsive portfolio built with HTML, CSS, and JavaScript — showcasing 
+        clean design, accessibility, and smooth animations.
+      </p>
+      <a href="https://devmediay6.github.io/my-website/" target="_blank">Live Demo</a>
+    </div>
+
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>📧 Email me at <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>📧 Email me at <a href="josey6@gmail.com">josey6kmt@gmail.com</a></p>
     <p>🔗 Connect with me on 
-      <a href="https://github.com/YOUR-GITHUB" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">LinkedIn</a>
+      <a href="https://github.com/devmediay6" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/mediay6" target="_blank">LinkedIn</a>
     </p>
   </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 [Your Name]. Built with ❤️ and code.</p>
+    <p>&copy; 2025 Jose's World. Built with ❤️ and code.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
