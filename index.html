@@ -107,8 +107,47 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+  const apiKey = "5fa90ca2359a486796965c98c278e6ad"; // your existing key
+  const apiUrl = `https://newsapi.org/v2/top-headlines?category=technology&language=en&pageSize=6&apiKey=${apiKey}`;
+  const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`;
+
+  async function fetchTechNews() {
+    const newsContainer = document.getElementById("news-container");
+    newsContainer.textContent = "Loading latest tech headlines...";
+
+    try {
+      const res = await fetch(proxyUrl);
+      const data = await res.json();
+      const newsData = JSON.parse(data.contents);
+
+      if (!newsData.articles || newsData.articles.length === 0) {
+        newsContainer.textContent = "No tech news available at the moment.";
+        return;
+      }
+
+      newsContainer.innerHTML = "";
+      newsData.articles.forEach(article => {
+        const div = document.createElement("div");
+        div.classList.add("news-item");
+        div.innerHTML = `
+          <h4><a href="${article.url}" target="_blank">${article.title}</a></h4>
+          <p>${article.source.name}</p>
+        `;
+        newsContainer.appendChild(div);
+      });
+    } catch (error) {
+      console.error("Error fetching tech news:", error);
+      newsContainer.textContent = "Unable to load news at this time.";
+    }
+  }
+
+  fetchTechNews();
+</script>
+
 </body>
 </html>
+
 
 
 
