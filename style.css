@@ -275,4 +275,32 @@ body.dark .project-card {
   opacity: 0;
   visibility: hidden;
 }
+#news {
+  background: #f8f9fa;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #eee;
+}
+
+#news h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.news-item {
+  margin: 1rem 0;
+}
+
+.news-item a {
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
+
+
 
